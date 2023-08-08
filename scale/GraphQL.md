@@ -26,3 +26,15 @@
   - debug mode is implemented. if request has flag, response contains all logs.
 - (Breaking down typing)
   - OOP broken. Method can't run on partial data which requires full data.
+
+
+## [How Netflix Scales its API with GraphQL Federation (Part 1)](https://netflixtechblog.com/how-netflix-scales-its-api-with-graphql-federation-part-1-ae3557c187e2)
+
+### Issue
+When one team handles several domains managed by other teams, it had negative impacts (GraphQL team does not know much about each domain, resolvers are implemented manually, etc..).
+
+### Solution
+- Developed GraphQL federation.
+Each domain team can define schema independently.
+- Resolver will plan how to run query?
+- etc..
